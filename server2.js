@@ -3,9 +3,8 @@ var fs = require('fs');
 
 
 function renderHomePage(request, response){
-	var homePageHtml = fs.readFileSync('homePageHtml.html');
 	response.writeHead(200, {'content-type': 'text/html'});
-	response.write(homePageHtml);
+	response.write('TOBY DID THIS');
 	response.end();
 }
 function renderResumepage(request, response){
@@ -52,5 +51,5 @@ var server = http.createServer(function(request,response){
 	response.end();
 });
 
-server.listen(8000);
-console.log("Our server is listening on port 8000");
+server.listen(8001);
+console.log("Our server is listening on port 8001");
