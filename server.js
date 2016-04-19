@@ -35,7 +35,6 @@ function renderErrorPage(request,response){
 	response.end();
 }
 
-
 var server = http.createServer(function(request,response){
 	response.writeHead(200, {'content-type': 'text/html'});
 		if(request.url == '/'){
